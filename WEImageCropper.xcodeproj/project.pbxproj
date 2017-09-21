@@ -13,8 +13,7 @@
 		898350CF1BCCEA98005683FD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 898350CD1BCCEA98005683FD /* Main.storyboard */; };
 		898350D11BCCEA98005683FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 898350D01BCCEA98005683FD /* Assets.xcassets */; };
 		898350D41BCCEA98005683FD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 898350D21BCCEA98005683FD /* LaunchScreen.storyboard */; };
-		898350DD1BCCEAA6005683FD /* WEImageCropperViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 898350DC1BCCEAA6005683FD /* WEImageCropperViewController.m */; settings = {ASSET_TAGS = (); }; };
-		898350E01BCD0770005683FD /* SelectPhotosCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 898350DF1BCD0770005683FD /* SelectPhotosCollectionViewController.m */; settings = {ASSET_TAGS = (); }; };
+		DEAAAAD01F73A5D800A461F6 /* WEClipImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DEAAAACF1F73A5D800A461F6 /* WEClipImageViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,10 +27,8 @@
 		898350D01BCCEA98005683FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		898350D31BCCEA98005683FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		898350D51BCCEA98005683FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		898350DB1BCCEAA6005683FD /* WEImageCropperViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WEImageCropperViewController.h; sourceTree = "<group>"; };
-		898350DC1BCCEAA6005683FD /* WEImageCropperViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WEImageCropperViewController.m; sourceTree = "<group>"; };
-		898350DE1BCD0770005683FD /* SelectPhotosCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectPhotosCollectionViewController.h; sourceTree = "<group>"; };
-		898350DF1BCD0770005683FD /* SelectPhotosCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectPhotosCollectionViewController.m; sourceTree = "<group>"; };
+		DEAAAACE1F73A5D800A461F6 /* WEClipImageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WEClipImageViewController.h; sourceTree = "<group>"; };
+		DEAAAACF1F73A5D800A461F6 /* WEClipImageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WEClipImageViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,10 +65,8 @@
 				898350C81BCCEA98005683FD /* AppDelegate.m */,
 				898350CA1BCCEA98005683FD /* ViewController.h */,
 				898350CB1BCCEA98005683FD /* ViewController.m */,
-				898350DE1BCD0770005683FD /* SelectPhotosCollectionViewController.h */,
-				898350DF1BCD0770005683FD /* SelectPhotosCollectionViewController.m */,
-				898350DB1BCCEAA6005683FD /* WEImageCropperViewController.h */,
-				898350DC1BCCEAA6005683FD /* WEImageCropperViewController.m */,
+				DEAAAACE1F73A5D800A461F6 /* WEClipImageViewController.h */,
+				DEAAAACF1F73A5D800A461F6 /* WEClipImageViewController.m */,
 				898350CD1BCCEA98005683FD /* Main.storyboard */,
 				898350D01BCCEA98005683FD /* Assets.xcassets */,
 				898350D21BCCEA98005683FD /* LaunchScreen.storyboard */,
@@ -115,7 +110,7 @@
 		898350B91BCCEA98005683FD /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0700;
+				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = huazi;
 				TargetAttributes = {
 					898350C01BCCEA98005683FD = {
@@ -159,10 +154,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				898350E01BCD0770005683FD /* SelectPhotosCollectionViewController.m in Sources */,
-				898350DD1BCCEAA6005683FD /* WEImageCropperViewController.m in Sources */,
 				898350CC1BCCEA98005683FD /* ViewController.m in Sources */,
 				898350C91BCCEA98005683FD /* AppDelegate.m in Sources */,
+				DEAAAAD01F73A5D800A461F6 /* WEClipImageViewController.m in Sources */,
 				898350C61BCCEA98005683FD /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -197,13 +191,21 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -241,13 +243,21 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -312,6 +322,7 @@
 				898350DA1BCCEA98005683FD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
